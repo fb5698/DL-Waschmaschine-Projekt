@@ -78,7 +78,7 @@ while active:
         print("Acquiring finished.")
         active = False
         tim.deinit()
-        with open('Zustand X.csv', 'w') as data_file: #JE NACH ZUSTAND ÄNDERN
+        with open('Zustand X.csv', 'w') as data_file: #JE NACH ZUSTAND ANPASSEN
             data_file.write('  A_X,   A_Y,   A_Z\n')
             for data_point in accel_data:
                 data_file.write('{:f},{:f},{:f}\n'.format(data_point[0], data_point[1], data_point[2]))
